@@ -7,6 +7,7 @@ namespace Assets.Scripts.CardSystem
 {
     public class Card
     {
+        private UnityEngine.UI.Image image;
         private Enums.CardTypes type;
         private Actions.Action action;
         private string name;

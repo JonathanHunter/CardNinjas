@@ -30,11 +30,22 @@ namespace Assets.Scripts.UI
 
         private void UpdateCardInfo(CardSystem.Card card)
         {
-            nameText.text = "Name: " + card.Name;
-            typeText.text = "Type: " + card.Type.ToString();
-            descriptionText.text = "Description: " + card.Description;
-            rangeText.text = "Range: " + card.Action.Range.ToString();
-            damageText.text = "Damage: " + card.Action.Damage.ToString();
+            if (card == null)
+            {
+                nameText.text = "Name: ";
+                typeText.text = "Type: ";
+                descriptionText.text = "Description: ";
+                rangeText.text = "Range: ";
+                damageText.text = "Damage: ";
+            }
+            else
+            {
+                nameText.text = "Name: " + card.Name;
+                typeText.text = "Type: " + card.Type.ToString();
+                descriptionText.text = "Description: " + card.Description;
+                rangeText.text = "Range: " + card.Action.Range.ToString();
+                damageText.text = "Damage: " + card.Action.Damage.ToString();
+            }
         }
 
         public void DisplayDescription()

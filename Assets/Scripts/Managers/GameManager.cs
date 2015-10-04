@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using Assets.Scripts.Util;
 
 namespace Assets.Scripts.Managers
 {
@@ -7,13 +7,7 @@ namespace Assets.Scripts.Managers
     {
         public static GameManager instance;
 
-        public enum GameStates
-        {
-            Battle,
-            CardSelection
-        }
-
-        private static GameStates state = GameStates.CardSelection;
+        private static Enums.GameStates state = Enums.GameStates.CardSelection;
 
         void Awake()
         {
@@ -30,7 +24,7 @@ namespace Assets.Scripts.Managers
 
         void Update()
         {
-            if(Input.GetKeyDown(KeyCode.O))
+            if(CustomInput.BoolFreshPress(CustomInput.UserInput.SelectCards))
             {
                 GameObject.Find("Card Selection Canvas").GetComponent<UI.CardSelector>().EnableCanvas();
             }
@@ -38,14 +32,14 @@ namespace Assets.Scripts.Managers
 
         private void CardSelectorStateEnable()
         {
-            state = GameStates.CardSelection;
+            state = Enums.GameStates.CardSelection;
         }
         private void CardSelectorStateDisable()
         {
-            state = GameStates.Battle;
+            state = Enums.GameStates.Battle;
         }
 
-        public static GameStates State
+        public static Enums.GameStates State
         {
             get { return state; }
         }

@@ -1,29 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <library>
-  <card name= "Sword">
+  <card name= "Sword1">
     <type>Sword</type>
-    <action range= "1" damage= "3" hitbox= "Prefabs/HitBox">Sword</action>
+    <action range= "1" damage= "3" hitbox= "Prefabs/HitBox">VerticalObjectSpawn</action>
     <description>A basic sword.</description>
   </card>
-  <card name= "Sword">
+  <card name= "Sword2">
     <type>Sword</type>
-    <action range= "2" damage= "3" hitbox= "Prefabs/HitBox">Sword</action>
+    <action range= "2" damage= "3" hitbox= "Prefabs/HitBox">VerticalObjectSpawn</action>
     <description>A basic sword with higher range.</description>
   </card>
-  <card name= "Sword">
+  <card name= "Sword3">
     <type>Sword</type>
-    <action range= "3" damage= "3" hitbox= "Prefabs/HitBox">Sword</action>
+    <action range= "3" damage= "3" hitbox= "Prefabs/HitBox">VerticalObjectSpawn</action>
     <description>A basic sword with max range.</description>
   </card>
-  <card name= "Kunai">
+  <card name= "Kunai1">
     <type>Kunai</type>
-    <action range= "3" damage= "1" hitbox= "Prefabs/HitBox">Kunai</action>
+    <action range= "1" damage= "1" hitbox= "Prefabs/Kunai">VerticalObjectSpawn</action>
     <description>A Throwing weapon.</description>
   </card>
-  <card name= "Heal">
+  <card name= "Kunai2">
+    <type>Kunai</type>
+    <action range= "2" damage= "1" hitbox= "Prefabs/Kunai">VerticalObjectSpawn</action>
+    <description>2 Throwing weapons.</description>
+  </card>
+  <card name= "Kunai3">
+    <type>Kunai</type>
+    <action range= "3" damage= "1" hitbox= "Prefabs/Kunai">VerticalObjectSpawn</action>
+    <description>3 Throwing weapons.</description>
+  </card>
+  <card name= "Heal1">
     <type>Heal</type>
     <action range= "1" damage= "10" hitbox= "Prefabs/HitBox">Heal</action>
     <description>A basic Health restore.</description>
+  </card>
+  <card name= "Heal2">
+    <type>Heal</type>
+    <action range= "1" damage= "25" hitbox= "Prefabs/HitBox">Heal</action>
+    <description>A medium Health restore.</description>
+  </card>
+  <card name= "Heal3">
+    <type>Heal</type>
+    <action range= "1" damage= "50" hitbox= "Prefabs/HitBox">Heal</action>
+    <description>A large Health restore.</description>
   </card>
   <card name= "Smoke">
     <type>Smoke</type>

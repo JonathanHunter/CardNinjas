@@ -5,7 +5,7 @@ namespace Assets.Scripts.Util
     class CustomInput : MonoBehaviour
     {
         /// <summary> This is used to define user inputs, changed to add or remove buttons. </summary>
-        public enum UserInput { Up, Down, Left, Right, Attack, UseCard, Pause, Accept, Cancel }
+        public enum UserInput { Up, Down, Left, Right, Attack, UseCard, Pause, Accept, Cancel, SelectCards }
 
         /// <summary> This is used to define the default keybindings. </summary>
         public static void DefaultKey()
@@ -21,6 +21,7 @@ namespace Assets.Scripts.Util
             keyBoard[(int)UserInput.Pause] = KeyCode.Escape;
             keyBoard[(int)UserInput.Accept] = KeyCode.K;
             keyBoard[(int)UserInput.Cancel] = KeyCode.J;
+            keyBoard[(int)UserInput.SelectCards] = KeyCode.O;
         }
 
         /// <summary> This is used to define the default controller bindings. </summary>
@@ -37,6 +38,7 @@ namespace Assets.Scripts.Util
             gamePad[(int)UserInput.Pause] = START;
             gamePad[(int)UserInput.Accept] = A;
             gamePad[(int)UserInput.Cancel] = B;
+            gamePad[(int)UserInput.SelectCards] = RB;
         }
 
         // Modification of the code below this should be unecessary.
