@@ -3,7 +3,7 @@ using Assets.Scripts.Player;
 
 namespace Assets.Scripts.CardSystem.Actions
 {
-    class Kunai : Action
+    class Projectile : Action
     {
         public override void useCard(Character actor)
         {
