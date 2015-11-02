@@ -3,7 +3,7 @@ using Assets.Scripts.Player;
 
 namespace Assets.Scripts.CardSystem.Actions
 {
-    class VerticalObjectSpawn : Action
+    class MeleeHorizontal : Action
     {
         public override void useCard(Character actor)
         {
