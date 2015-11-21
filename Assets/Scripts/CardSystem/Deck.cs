@@ -10,7 +10,6 @@ namespace Assets.Scripts.CardSystem
         public Deck(List<Card> deck)
         {
             this.deck = deck;
-            //Random.seed = System.DateTime.Today.Millisecond;
             Card temp;
             for (int i = 0; i < this.deck.Count; i++)
             {

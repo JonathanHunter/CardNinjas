@@ -34,7 +34,6 @@ namespace Assets.Scripts.Enemies
         protected override void Initialize()
         {
             player = FindObjectOfType<Player.Player>().gameObject;
-            Random.seed = System.DateTime.Today.Millisecond;
             state = 0;
             prevState = 0;
             waitTime = Random.Range(0, 2);

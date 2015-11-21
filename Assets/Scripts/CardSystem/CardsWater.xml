@@ -140,30 +140,37 @@
   <!--Unique-->
   <card name= "Oil Spill">
     <element>Water</element>
-    <image>Cards\Oil Spill</image>
+    <image>Cards/Oil Spill</image>
     <type>SwordHori</type>
     <action range= "1" damage= "1" prefab= "Prefabs/Oil">Oil</action>
     <description>Throws some slippery oil in front of you.</description>
   </card>
   <card name= "Oil Splash">
     <element>Water</element>
-    <image>Cards\Oil Splash</image>
+    <image>Cards/Oil Splash</image>
     <type>SwordHori</type>
     <action range= "2" damage= "1" prefab= "Prefabs/Oil">Oil</action>
     <description>Throws a cone of oil in front of you.</description>
   </card>
   <card name= "Oil Line">
     <element>Water</element>
-    <image>Cards\Oil Line</image>
+    <image>Cards/Oil Line</image>
     <type>SwordHori</type>
     <action range= "3" damage= "1" prefab= "Prefabs/Oil">Oil</action>
     <description>Throws a line of oil three tiles forward.</description>
   </card>
   <card name= "Big Oil">
     <element>Water</element>
-    <image>Cards\Big Oil</image>
+    <image>Cards/Big Oil</image>
     <type>SwordHori</type>
     <action range= "4" damage= "1" prefab= "Prefabs/Oil">Oil</action>
     <description>Cover half the enemy's field with oil.</description>
+  </card>
+  <card name= "Tsunami">
+    <element>Water</element>
+    <image>Cards/TidalWave</image>
+    <type>ChiAttack</type>
+    <action range= "3" damage= "6" prefab= "Prefabs/Tidalwave">TidalWave</action>
+    <description>Summons a giant tidal wave that rushes to the enemy on all rows.</description>
   </card>
 </library>

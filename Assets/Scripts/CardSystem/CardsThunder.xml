@@ -140,28 +140,28 @@
   </card>
   <card name= "Lightning Strike">
     <element>Thunder</element>
-    <image>Cards/Lightning3</image>
+    <image>Cards/Lightning Strike</image>
     <type>ChiStationary</type>
     <action range= "1" damage= "4" prefab= "Prefabs/Lightning">LightStrike</action>
     <description>A strike of lightning two spaces ahead.</description>
   </card>
   <card name= "Lightning Cross">
     <element>Thunder</element>
-    <image>Cards/Lightning3</image>
+    <image>Cards/Lighting Cross</image>
     <type>ChiStationary</type>
     <action range= "4" damage= "2" prefab= "Prefabs/Lightning">LightStrike</action>
     <description>A cross-shaped barrage of lightning.</description>
   </card>
   <card name= "Lightning X">
     <element>Thunder</element>
-    <image>Cards/Lightning3</image>
+    <image>Cards/Lightning X</image>
     <type>ChiStationary</type>
     <action range= "5" damage= "2" prefab= "Prefabs/Lightning">LightStrike</action>
     <description>An X-shaped barrage of lightning.</description>
   </card>
   <card name= "Lightning Shot">
     <element>Thunder</element>
-    <image>Cards/Lightning4</image>
+    <image>Cards/Lightning Shot</image>
     <type>ChiAttack</type>
     <action range= "0" damage= "5" prefab= "Prefabs/LightningStrike">Laser</action>
     <description>Channels your chi into a charged, thunderous bolt that strikes straight across the field.</description>

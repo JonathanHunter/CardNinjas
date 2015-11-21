@@ -34,7 +34,7 @@ namespace Assets.Scripts.Enemies
                     if (player.CurrentNode.Position.x < currentNode.Position.x)
                     {
                         //Check if we can move up.
-                        if (!currentNode.Up.Occupied)
+                        if (currentNode.panelNotDestroyed(Util.Enums.Direction.Up) && !currentNode.Up.Occupied)
                         {
                             mechAnima.SetTrigger("Wait");
                             currentNode.clearOccupied();//Say we aren't here
@@ -46,7 +46,7 @@ namespace Assets.Scripts.Enemies
                     else if (player.CurrentNode.Position.x > currentNode.Position.x)
                     {
                         //Check if we can move up.
-                        if (!currentNode.Down.Occupied)
+                        if (currentNode.panelNotDestroyed(Util.Enums.Direction.Down) && !currentNode.Down.Occupied)
                         {
                             mechAnima.SetTrigger("Wait");
                             currentNode.clearOccupied();//Say we aren't here

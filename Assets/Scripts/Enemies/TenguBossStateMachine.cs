@@ -18,7 +18,6 @@ namespace Assets.Scripts.Enemies
             currState = 0;
             hold = 0;
             moveCount = 0;
-            Random.seed = System.DateTime.Today.Millisecond;
         }
 
         public int Run(bool animDone, bool waitTime, bool moveFailed, bool full)

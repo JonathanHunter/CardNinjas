@@ -5,7 +5,7 @@
     <element>None</element>
     <image>Cards/Tanto</image>
     <type>Tanto</type>
-    <action range= "1" damage= "6" prefab= "Prefabs/SlashEffect">MeleeHorizontal</action>
+    <action range= "3" damage= "6" prefab= "Prefabs/Tidalwave">TidalWave</action>
     <description>A short sword that hits the tile in front of you.</description>
   </card>
   <card name= "Wakizashi">
@@ -230,7 +230,7 @@
     <description>Channels your chi into a special ninjutsu blast.</description>
   </card>
 
-<!--Fire Melee-->
+  <!--Fire Melee-->
   <card name= "Blazing Tanto">
     <element>Fire</element>
     <image>Cards/Tanto</image>
@@ -729,6 +729,13 @@
     <type>SwordHori</type>
     <action range= "4" damage= "1" prefab= "Prefabs/Oil">Oil</action>
     <description>Cover half the enemy's field with oil.</description>
+  </card>
+  <card name= "Tsunami">
+    <element>Water</element>
+    <image>Cards/TidalWave</image>
+    <type>ChiAttack</type>
+    <action range= "3" damage= "6" prefab= "Prefabs/Tidalwave">TidalWave</action>
+    <description>Summons a giant tidal wave that rushes to the enemy on all rows.</description>
   </card>
 
   <!--Thunder Melee-->

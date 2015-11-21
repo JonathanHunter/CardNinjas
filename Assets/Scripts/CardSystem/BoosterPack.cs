@@ -24,7 +24,6 @@ namespace Assets.Scripts.CardSystem
         public List<Card> GetCards()
         {
             List<Card> pack = new List<Card>();
-            Random.seed = System.DateTime.Today.Millisecond;
             for (int i = 0; i < packSize; i++)
             {
                 pack.Add(cards[Random.Range(0, cards.Count)]);
